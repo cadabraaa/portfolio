@@ -50,6 +50,11 @@ def portfolio1():
   return render_template('portfolio1.html')
 
 
+@app.route('/QuickSight')
+def QuickSight():
+  return render_template('QuickSight.html')
+
+
 @app.route("/api/jobs")
 def list_jobs():
   return jsonify(JOBS)
