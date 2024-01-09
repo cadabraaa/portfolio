@@ -30,6 +30,26 @@ def hello_world():
   return render_template('home.html', jobs=JOBS)
 
 
+@app.route('/home')
+def home():
+  return render_template('home.html')
+
+
+@app.route('/nav')
+def nav():
+  return render_template('nav.html')
+
+
+@app.route('/footer')
+def footer():
+  return render_template('footer.html')
+
+
+@app.route('/portfolio1')
+def portfolio1():
+  return render_template('portfolio1.html')
+
+
 @app.route("/api/jobs")
 def list_jobs():
   return jsonify(JOBS)

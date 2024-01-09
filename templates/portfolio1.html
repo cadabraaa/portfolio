@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio1</title>
+  <!-- Google Fonts css-->
+  <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash%7CRoboto:300,400,400i,500,500i,700,700i,900" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <!-- Font Awesome icon css-->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/flaticon.css') }}">
+
+  <!-- Swiper's CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/swiper.min.css') }}">
+  <!-- Animated css -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+  <!-- Magnific Popup CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+  <!-- Animation Headline CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/animation-headline.css') }}">
+  <!-- Slick nav css -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/slicknav.css') }}">
+
+  <!-- Main custom css -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}"> 
+</head>
+<body>
+  <!-- Header Section Start -->
+  <header class="header">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top" id="main-navbar">
+      <div class="container">
+        <!-- Navbar Brand start -->
+        <a class="navbar-brand" href="{{ url_for('home') }}">
+          <h1><span>My</span>Portfolio</h1>
+        </a>
+      </div>
+    </nav>
+  <!-- Navbar Brand end -->
+
+    <!-- Banner Slider Section starts -->
+    <main>
+        <div class="text-secondary px-4 py-5 text-center">
+            <div class="py-5">
+              <h2 class="display-5 fw-bold text-white">2020 Developer Survey</h2>
+              <div class="col-lg-6 mx-auto">
+                <img src="static/images/Stack_Overflow_logo_white.png" alt="" >
+                <p class="fs-5 mt-4">I have utilized data from Stack Overflow to examine how developers acquire new skills and progress, identify the tools they employ, and understand their preferences. Please review the diverse graphs and charts displaying the results of this analysis.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </main>
+    <!-- Banner Slider Section ends -->
+
+    <!-- Portfolio 1 Section starts -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+    <!-- Include the URL for Assignment.html -->
+    <iframe src="{{ url_for('static', filename='portfolios/stackoverflow-survey.html') }}" width="100%" height="1000" ></iframe>
+          </div>
+        </div>
+      </div>
+    <!-- Portfolio 1 Section ends -->
+    
+
+    <!-- Footer Section starts -->
+        {% include 'footer.html' %}
+    <!-- Footer Section Ends -->
+
+    <!-- Jquery Library File -->
+    <script src="{{ url_for('static', filename='js/jquery-1.12.4.min.js') }}"></script>
+    <!-- Bootstrap js file -->
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <!-- Wow js file -->
+    <script src="{{ url_for('static', filename='js/wow.js') }}"></script>
+    <!-- Swiper Carousel js file -->
+    <script src="{{ url_for('static', filename='js/swiper.min.js') }}"></script>
+    <!-- Counterup js file -->
+    <script src="{{ url_for('static', filename='js/waypoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+    <!-- Isotop js file -->
+    <script src="{{ url_for('static', filename='js/isotope.min.js') }}"></script>
+    <!-- Magnific Popup core JS file -->
+    <script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+    <!-- Slick Nav js file -->
+    <script src="{{ url_for('static', filename='js/jquery.slicknav.js') }}"></script>
+    <!-- SmoothScroll -->
+    <script src="{{ url_for('static', filename='js/SmoothScroll.js') }}"></script>
+    <!-- Animated Headline js file -->
+    <script src="{{ url_for('static', filename='js/animation-headline.js') }}"></script>
+      <!-- Main Custom js file -->
+    <script src="{{ url_for('static', filename='s/function.js') }}"></script>
+
+</body>
+</html>
