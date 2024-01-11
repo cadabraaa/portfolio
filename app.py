@@ -54,6 +54,10 @@ def portfolio1():
 def QuickSight():
   return render_template('QuickSight.html')
 
+@app.route('/education_India')
+def education_India():
+  return render_template('education_India.html')
+
 
 @app.route("/api/jobs")
 def list_jobs():
